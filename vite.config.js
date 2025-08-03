@@ -7,6 +7,7 @@ export default defineConfig({
     plugins: [react(),
         tailwindcss()
     ],
+    base: import.meta.env.BASE_URL || '/',
     test: {
         environment: 'jsdom',
         globals: true,
